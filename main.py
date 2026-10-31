@@ -1,9 +1,8 @@
 import pygame
 import sys
-import math
 
 SCREEN_WIDTH = 960
-SCREEN_HEIGHT = 540
+SCREEN_HEIGHT = 440
 FPS = 60
 TILE_SIZE = 40
 
@@ -30,7 +29,6 @@ STATE_VICTORY = "VICTORY"
 
 
 class SoundManager:
-    """Handles audio playback with fallback if files or audio devices are missing."""
     def __init__(self):
         self.sounds = {}
         self.muted = False
@@ -250,7 +248,7 @@ LEVELS = [
         "                                                              C        ",
         "                                                             XXX       ",
         "                                                           X           ",
-        "                  C   C          C    C             C  C  X       G    ",
+        "                  C   C          C    C             C  C          G    ",
         "  P             XXXXXXX         XXXXXXXX           XXXXXX       XXXXX  ",
         "XXXXX                         X                                        ",
         "XXXXXSS  SSS  XXXXXXXXX  SS  SSSSSSSSSSSS    SS  XXXXXXXXXX            ",
@@ -258,18 +256,18 @@ LEVELS = [
     ],
     # Level 5
     [
-        "                                                                    C  ",
-        "                                                                  XXXX ",
-        "                                                        C   C  X       ",
-        "                                                  X   XXXXXXX          ",
-        "                                      C   C     X                      ",
-        "                                    XXXXXXX       X                    ",
-        "                    C   C                           X                  ",
-        "                  XXXXXXX                             X                ",
-        "          C   C                                  C      X         G    ",
-        "  P     XXXXXXX                                    X  X         XXXXX  ",
-        "XXXXX                           XXXX   XXXX   XXXX                     ",
-        "XXXXXSSSSSSSSSSSSSSSSSSSSSSS   SSSSSS SSSSSS SSSSSSSSSSSSSSSSSSSXXXXXXX",
+        "                                                                       ",
+        "                                                                       ",
+        "                                                                       ",
+        "                                                     C  C              ",
+        "                                                    XXXXXX             ",
+        "                                            C  C                       ",
+        "                   C   C                   XXXXXX                      ",
+        "                  XXXXXXX                                              ",
+        "         C   C                                   C  X             G    ",
+        "  P     XXXXXXX                                                 XXXXX  ",
+        "XXXXX                            XX     XX     XX                      ",
+        "XXXXXSSSSSSSSSSSSSSSSSSSSSSS    SSSS   SSSS   SSSSSSSSSSSSSSSSSSSSSSSSS",
         "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     ]
 ]
